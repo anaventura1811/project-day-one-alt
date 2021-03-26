@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Muli, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.8s ease-in 0.4s;
+}
+
+#img-1 {
+  background-image: url('images/bantersnaps-vGe8XBQAF0U-unsplash.jpg');
+}
+
+#img-2 {
+background-image: url('images/5989592581_9939644b8e_b.jpg');
+}
+
+#img-3 {
+  background-image: url('images/a8b4308b-a01e-451f-ad7d-31a96bec96e1.jpeg');
+  border-radius: 10px;
+}
+
+#img-4 {
+  background-image: url('images/ce13b9c0-8a00-41f8-acc2-a6c022bc6c4e.jpeg');
+}
+
+#img-5 {
+  background-image: url('images/p-2nDcB0KsrSE-unsplash.jpg');
+  border-radius: 10px;
+}
+
+#img-6 {
+  background-image: url('images/sebastian-sammer-ut_mEazlPvc-unsplash.jpg');
+}
+
+
+.panel.active {
+  flex: 5;
+}
+
+
+@media(max-width: 500px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4) , .panel:nth-of-type(5) , .panel:nth-of-type(6) , .panel:nth-of-type(7) {
+    display: none;
+  }
+}
